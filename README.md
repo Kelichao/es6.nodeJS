@@ -26,6 +26,12 @@ app.get('/', function (req, res) {
   res.send('Hello World!');
 });
 
+// 路由  /user 节点接受请求
+// 地址为http://localhost:3000/user
+app.get('/user', function (req, res) {
+  res.send('user');
+});
+
 // 监听3000端口
 var server = app.listen(3000, function () {
   var host = server.address().address;
